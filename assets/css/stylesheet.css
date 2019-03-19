@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Nanum+Gothic');
+
+
 html {
   box-sizing: border-box;
 }
@@ -5,11 +8,11 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nanum Gothic', 'Open Sans', Arial, sans-serif;
   margin: 0;
 }
 h1, h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Do Hyeon', sans-serif;
   font-weight: 400;
 }
 h1 {
@@ -34,19 +37,6 @@ a:hover {
   padding: 60px 50px;
   overflow: hidden;
 }
-.uppercase {
-  text-transform: uppercase;
-}
-
-/* Download button */
-.btn {
-  text-decoration: none;
-  background: black;
-  color: white;
-  padding: 10px;
-  display: inline-block;
-}
-
 
 /* Header and Footer
 -------------------------*/
@@ -66,11 +56,21 @@ header h1, header h2 {
 .profile-img {
   border-radius: 50%;
 }
-.download {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.profile-pic {
+  background: url("../images/profile.png") no-repeat;
+  background-size: 250px;
+  width: 250px;
+  height: 250px;
+  float: left;
 }
+.profile-pic:hover {
+  background: url("../images/profile-glitch3.gif") no-repeat;
+  background-size: 250px;
+  width: 250px;
+  height: 250px;
+  float: left;
+}
+
 
 /* footer */
 footer {
@@ -108,9 +108,11 @@ nav a {
 }
 h3 ~ p {
   margin: 0;
+  font-family: 'Nanum Gothic', 'Open Sans', Arial, sans-serif;
 }
 .job-description {
   margin-bottom: 25px;
+  font-family: 'Nanum Gothic', 'Open Sans', Arial, sans-serif;
 }
 .job-description p:first-of-type {
   margin-top: 0;
@@ -121,7 +123,7 @@ h3 ~ p {
 -------------------------*/
 .education {
   background: linear-gradient(rgba(141, 153, 174, 0.9), rgba(141, 153, 174, 0.6)),
-              url(../images/roboTest/squad.jpg) no-repeat fixed;
+  url(../images/roboTest/squad.jpg) no-repeat fixed;
   background-size: cover;
 }
 p + h3 {
@@ -129,18 +131,16 @@ p + h3 {
 }
 
 
-
-/* Media Queries
--------------------------*/
+/* Media Queries */
 @media (min-width: 900px) {
   .col-narrow {
-    width: 30%;
     float: left;
+    width: 30%
   }
   .col-wide {
     width: 70%;
     float: left;
-    padding-left: 20px;
+    padding-left: 40px;
   }
 }
 @media (max-width: 899px){
